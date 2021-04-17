@@ -1,3 +1,7 @@
 package com.example.recipeapp.ui.details
 
-interface DetailsScreen{}
+import com.example.recipeapp.model.Recipe
+
+interface DetailsScreen{
+    fun showDetails(recipe: Recipe){}
+}
