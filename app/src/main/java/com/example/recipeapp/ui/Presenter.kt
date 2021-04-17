@@ -1,5 +1,7 @@
 package com.example.recipeapp.ui
 
+import com.example.recipeapp.ui.details.DetailsActivity
+
 abstract class Presenter<S> {
     protected var screen: S? = null
 

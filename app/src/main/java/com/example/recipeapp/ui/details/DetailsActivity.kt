@@ -18,17 +18,6 @@ class DetailsActivity : AppCompatActivity() {
 
       //  detailsPresenter.showRecipeDetails()
     }
-
-    override fun onStart() {
-        super.onStart()
-        detailsPresenter.attachScreen(this)
-    }
-
-    override fun onStop() {
-        super.onStop()
-        detailsPresenter.detachScreen()
-    }
-
    /* override fun showRecipeDetails(recipe) {
         TODO("Not yet implemented")
     }*/
