@@ -1,3 +1,9 @@
 package com.example.recipeapp.interactor.recipes
 
-class RecipesInteractor {}
+import com.example.recipeapp.network.RecipeApi
+import javax.inject.Inject
+
+class RecipesInteractor @Inject constructor(private var recipeApi: RecipeApi) {
+
+    fun getRecipes(){}
+}

@@ -1,9 +1,13 @@
 package com.example.recipeapp.model
 
-class Recipe{
+import com.google.gson.annotations.SerializedName
 
-    var name: String? = null
-    var ingredients: Array<String>? = null
-    var process: String? = null
-    var imageUrl: String? = null
-}
+data class Recipe(
+        @SerializedName("imageUrl")
+        var imageUrl: String? = null,
+        @SerializedName("ingredients")
+        var ingredients: List<String>? = null,
+        @SerializedName("id")
+        var id: Double? = null
+        )
+

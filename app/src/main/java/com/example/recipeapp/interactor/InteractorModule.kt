@@ -1,6 +1,7 @@
 package com.example.recipeapp.interactor
 
 import com.example.recipeapp.interactor.recipes.RecipesInteractor
+import com.example.recipeapp.network.RecipeApi
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -9,5 +10,5 @@ import javax.inject.Singleton
 class InteractorModule {
     @Provides
     @Singleton
-    fun provideRecipesInteractor() = RecipesInteractor()
+    fun provideRecipesInteractor(recipeApi: RecipeApi) = RecipesInteractor(recipeApi)
 }
